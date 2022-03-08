@@ -53,7 +53,7 @@ cd data/corpus/NovelNER
 python data_utils.py
 ```
 
-3. train/test/predict
+7. train/test/predict
 ```
 cd V1 (with Bert)
 CUDA_VISIBLE_DEVICES=0 python flat_main.py --dataset novel --status train
@@ -61,11 +61,14 @@ CUDA_VISIBLE_DEVICES=0 python flat_main.py --dataset novel --status test
 CUDA_VISIBLE_DEVICES=0 python flat_main.py --dataset novel --status predict
 ```
 
+8. you can download the ner model and predict directly
+      Model finetuned by three novels (with sgd) : [Google Drive](https://drive.google.com/file/d/1sWZWy7uhZ2vsdb-29Er9zeCjPqJK631-/view?usp=sharing)
+
 If you want to record experiment result, you can use fitlog:
 ```
 pip install fitlog
-fitlog init V0
-cd V0
+fitlog init V1
+cd V1
 fitlog log logs
 ```
 then set use_fitlog = True in flat_main.py.
