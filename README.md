@@ -61,7 +61,8 @@ CUDA_VISIBLE_DEVICES=0 python flat_main.py --dataset novel --status test
 CUDA_VISIBLE_DEVICES=0 python flat_main.py --dataset novel --status predict
 ```
 
-8. you can download the ner model and predict directly
+8. you can download the ner model and predict directly.
+      
       Model finetuned by three novels (with sgd) : [Google Drive](https://drive.google.com/file/d/1sWZWy7uhZ2vsdb-29Er9zeCjPqJK631-/view?usp=sharing)
 
 If you want to record experiment result, you can use fitlog:
